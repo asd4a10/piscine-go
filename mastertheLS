@@ -1,1 +1,1 @@
-ls -A -m -c --indicator-style=slash
+ls -A -m -t --indicator-style=slash
