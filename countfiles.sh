@@ -1,1 +1,1 @@
-ls -a -R -o ls | wc -l
+find . -mindepth 1  -type d,f | wc -l
