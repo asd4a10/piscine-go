@@ -1,9 +1,11 @@
 package PrintStr
 
+import "github.com/01-edu/z01"
+
 func PrintStr(str string) {
 
 	for _, symbol := range str {
-		PrintRune(symbol)
+		z01.PrintRune(symbol)
 	}
-	PrintRune(10)
+	z01.PrintRune(10)
 }
