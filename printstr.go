@@ -1,4 +1,4 @@
-package main
+package PrintStr
 
 func PrintStr(str string) {
 
