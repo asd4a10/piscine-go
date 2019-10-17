@@ -6,7 +6,7 @@ func StrRev(s string) string {
 	for range s {
 		size++
 	}
-	for i, _ := range s {
+	for i := range s {
 		w += string(s[size-1-i])
 	}
 	return w
