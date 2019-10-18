@@ -1,0 +1,1 @@
+ls -A --indicator-style=slash -m -c | tr -d ' '
