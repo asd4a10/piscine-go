@@ -12,7 +12,7 @@ func StrRev(s string) string {
 		size++
 	}
 	for i := range s {
-		w = w + string(s[i])
+		w = string(s[i]) + w
 	}
 	return w
 }
@@ -23,3 +23,5 @@ func main() {
 	fmt.Println(s)
 }
 
+12345 s
+w 21
