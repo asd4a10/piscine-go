@@ -1,8 +1,8 @@
-package main
+package BasicAtoi2
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
 func BasicAtoi2(s string) int {
 	size := 0
@@ -22,20 +22,20 @@ func BasicAtoi2(s string) int {
 	return num
 }
 
-func main() {
-	s := "12345"
-	s2 := "0000000012345"
-	s3 := "012 345"
-	s4 := "Hello World!"
+// func main() {
+// 	s := "12345"
+// 	s2 := "0000000012345"
+// 	s3 := "012 345"
+// 	s4 := "Hello World!"
 
-	n := BasicAtoi2(s)
-	n2 := BasicAtoi2(s2)
-	n3 := BasicAtoi2(s3)
-	n4 := BasicAtoi2(s4)
+// 	n := BasicAtoi2(s)
+// 	n2 := BasicAtoi2(s2)
+// 	n3 := BasicAtoi2(s3)
+// 	n4 := BasicAtoi2(s4)
 
-	fmt.Println(n)
-	fmt.Println(n2)
-	fmt.Println(n3)
-	fmt.Println(n4)
+// 	fmt.Println(n)
+// 	fmt.Println(n2)
+// 	fmt.Println(n3)
+// 	fmt.Println(n4)
 
-}
+// }
