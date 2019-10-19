@@ -2,7 +2,7 @@ package student
 
 import "github.com/01-edu/z01"
 
-func Raid1a(x, y int) {
+func Raid1b(x, y int) {
 	if x > 0 && y > 0 {
 		for j := 1; j <= y; j++ {
 			for i := 1; i <= x; i++ {
