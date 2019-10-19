@@ -22,6 +22,3 @@ func main() {
 	s = StrRev(s)
 	fmt.Println(s)
 }
-
-12345 s
-w 21
