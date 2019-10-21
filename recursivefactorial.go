@@ -13,6 +13,6 @@ func RecursiveFactorial(nb int) int {
 	} else if nb == 1 || nb == 0 {
 		return 1
 	} else {
-		return IterativeFactorial(nb-1) * nb
+		return RecursiveFactorial(nb-1) * nb
 	}
 }
