@@ -7,7 +7,7 @@ package AlphaCount
 
 func AlphaCount(str string) int {
 	count := 0
-	for index, _ := range str {
+	for index := range str {
 		if str[index] >= 'A' && str[index] <= 'Z' {
 			count++
 		} else if str[index] >= 'a' && str[index] <= 'z' {
