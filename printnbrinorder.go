@@ -1,4 +1,4 @@
-package main
+package PrintNbrInOrder
 
 import "github.com/01-edu/z01"
 
@@ -42,8 +42,8 @@ func PrintNbrInOrder(n int) {
 	}
 }
 
-func main() {
-	PrintNbrInOrder(32223423434)
-	PrintNbrInOrder(0)
-	PrintNbrInOrder(321)
-}
+// func main() {
+// 	PrintNbrInOrder(32223423434)
+// 	PrintNbrInOrder(0)
+// 	PrintNbrInOrder(321)
+// }
