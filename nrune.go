@@ -5,7 +5,7 @@ func NRune(s string, n int) rune {
 	for range s {
 		size++
 	}
-	if n > size || n < 1{
+	if n > size || n < 1 {
 		return '\x00'
 	}
 	a := []rune(s)
