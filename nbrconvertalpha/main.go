@@ -19,7 +19,6 @@ func main() {
 		a := 0
 		for _, j := range i {
 			if rune(j) < '0' || rune(j) > '9' {
-				z01.PrintRune(' ')
 				break
 			}
 			a = a*10 + int(j) - 48
