@@ -8,7 +8,7 @@ func Capitalize(s string) string {
 	a := []rune(s)
 	w := 0
 	for i := range a {
-		if (a[i] >= 'A' && a[i] <= 'Z') || (a[i] >= 'a' && a[i] <= 'z') {
+		if (a[i] >= 'A' && a[i] <= 'Z' && w == 0) || (a[i] >= 'a' && a[i] <= 'z' && w == 0) {
 			w++
 		} else if a[i] == ' ' {
 			w = 0
