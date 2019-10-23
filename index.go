@@ -5,6 +5,9 @@ package Index
 // )
 
 func Index(s string, toFind string) int {
+	if toFind == "" {
+		return 0
+	}
 	size := 0
 	for range toFind {
 		size++
@@ -23,6 +26,9 @@ func Index(s string, toFind string) int {
 			count = 0
 			b = -1
 		}
+	}
+	if count != size {
+		return -1
 	}
 	if b == -1 {
 		return -1
