@@ -1,6 +1,6 @@
-package NRune
+package LastRune
 
-func NRune(s string) rune {
+func LastRune(s string) rune {
 	size := 0
 	for range s {
 		size++
