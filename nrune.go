@@ -15,6 +15,7 @@ func NRune(s string, n int) rune {
 	a := []rune(s)
 	return a[n-1]
 }
+
 // func main() {
 // 	z01.PrintRune(NRune("Hello!", 3))
 // 	z01.PrintRune(NRune("Salut!", 2))
