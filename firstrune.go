@@ -5,8 +5,8 @@ package FirstRune
 // )
 
 func FirstRune(s string) rune {
-	a := rune(s[0])
-	return a
+	a := []rune(s)
+	return a[0]
 }
 
 // func main() {
