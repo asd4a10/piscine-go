@@ -10,7 +10,7 @@ func Capitalize(s string) string {
 	for i := range a {
 		if (a[i] >= 'A' && a[i] <= 'Z') || (a[i] >= 'a' && a[i] <= 'z') {
 			w++
-		} else {
+		} else if a[i] == ' ' {
 			w = 0
 		}
 
