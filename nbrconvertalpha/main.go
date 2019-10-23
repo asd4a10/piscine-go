@@ -25,5 +25,5 @@ func main() {
 			z01.PrintRune(rune(a + 96))
 		}
 	}
-
+	z01.PrintRune(10)
 }
