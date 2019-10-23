@@ -1,12 +1,12 @@
-package FirstRune
+package NRune
 
 // import (
 // 	"github.com/01-edu/z01"
 // )
 
-func FirstRune(s string) rune {
+func NRune(s string, n int) rune {
 	a := []rune(s)
-	return a[0]
+	return a[n-1]
 }
 
 // func main() {
