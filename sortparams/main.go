@@ -32,7 +32,7 @@ func main() {
 			}
 		}
 	}
-	for j := 0; j < size; j++ {
+	for j := 1; j < size; j++ {
 		a := []rune(name[j])
 		for i := range name[j] {
 			z01.PrintRune(a[i])
