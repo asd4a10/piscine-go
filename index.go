@@ -9,7 +9,7 @@ func Index(s string, toFind string) int {
 	for range toFind {
 		size++
 	}
-	b := 0
+	b := -1
 	count := 0
 	for i := range s {
 		if count == size {
@@ -24,7 +24,7 @@ func Index(s string, toFind string) int {
 			b = 0
 		}
 	}
-	if b == 0 {
+	if b == 0-1 {
 		return -1
 	}
 	return b
