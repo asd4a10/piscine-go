@@ -7,8 +7,9 @@ import (
 
 func main() {
 	name := os.Args[0]
-	for i := range name {
-		z01.PrintRune(rune(name[i]))
+	a := []rune(name)
+	for i := range a {
+		z01.PrintRune(a[i])
 	}
 	z01.PrintRune(10)
 
