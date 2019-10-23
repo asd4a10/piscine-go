@@ -7,8 +7,13 @@ import (
 
 func main() {
 	name := os.Args
+	u := 0
 	for index, i := range name {
 		if index == 0 {
+			continue
+		}
+		if index == 2 && i == "--upper" {
+			u = 1
 			continue
 		}
 		a := 0
@@ -21,6 +26,8 @@ func main() {
 		}
 		if a > 26 || a < 1 {
 			z01.PrintRune(' ')
+		} else if u == 1 {
+			z01.PrintRune(rune(a + 64))
 		} else {
 			z01.PrintRune(rune(a + 96))
 		}
