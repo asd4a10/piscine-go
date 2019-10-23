@@ -1,6 +1,5 @@
 package NRune
 
-
 func NRune(s string, n int) rune {
 	size := 0
 	for range s {
