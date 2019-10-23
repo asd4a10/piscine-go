@@ -1,8 +1,8 @@
-package main
+package Index
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
 func Index(s string, toFind string) int {
 	size := 0
@@ -31,8 +31,8 @@ func Index(s string, toFind string) int {
 
 }
 
-func main() {
-	fmt.Println(Index("Hello!", "el"))
-	fmt.Println(Index("Salut!", "alu"))
-	fmt.Println(Index("Ola!", "hOl"))
-}
+// func main() {
+// 	fmt.Println(Index("Hello!", "el"))
+// 	fmt.Println(Index("Salut!", "alu"))
+// 	fmt.Println(Index("Ola!", "hOl"))
+// }
