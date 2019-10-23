@@ -1,22 +1,26 @@
-package Capitalize
+package main
 
-// import (
-// 	"fmt"
-// )
+import (
+	"fmt"
+)
 
 func Capitalize(s string) string {
 	a := []rune(s)
 	w := 0
+	l := 0
 	for i := range a {
-		if (a[i] >= 'A' && a[i] <= 'Z' && w == 0) || (a[i] >= 'a' && a[i] <= 'z' && w == 0) {
+		if a[i] == '#' || (a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z') || a[i] == '*' || a[i] == '@' || a[i] == '&' {
 			w++
-		} else if a[i] == ' ' {
+			if (a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z') {
+				l++
+			}
+		} else {
 			w = 0
+			l = 0
 		}
-
-		if w == 1 && a[i] >= 'a' && a[i] <= 'z' {
+		if l == 1 && a[i] >= 'a' && a[i] <= 'z' {
 			a[i] -= 32
-		} else if w > 1 && a[i] >= 'A' && a[i] <= 'Z' {
+		} else if l > 1 && a[i] >= 'A' && a[i] <= 'Z' {
 			a[i] += 32
 		}
 	}
@@ -24,6 +28,6 @@ func Capitalize(s string) string {
 	return s
 }
 
-// func main() {
-// 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
-// }
+func main() {
+	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
+}
