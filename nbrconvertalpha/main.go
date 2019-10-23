@@ -14,6 +14,7 @@ func main() {
 		}
 		if index == 1 && i == "--upper" {
 			u = 1
+			z01.PrintRune(' ')
 			continue
 		}
 		a := 0
