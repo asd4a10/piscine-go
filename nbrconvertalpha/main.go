@@ -12,7 +12,7 @@ func main() {
 		if index == 0 {
 			continue
 		}
-		if index == 2 && i == "--upper" {
+		if index == 1 && i == "--upper" {
 			u = 1
 			continue
 		}
