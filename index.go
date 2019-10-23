@@ -21,7 +21,7 @@ func Index(s string, toFind string) int {
 			count++
 		} else {
 			count = 0
-			b = 0
+			b = -1
 		}
 	}
 	if b == -1 {
