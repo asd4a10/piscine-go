@@ -6,7 +6,7 @@ package IsAlpha
 
 func IsAlpha(a string) bool {
 	for i := range a {
-		if (a[i] < 'a' || a[i] > 'z') && (a[i] < 'A' || a[i] > 'Z') && (a[i] > '9' || a[i] < '0') {
+		if a[i] > '9' || a[i] < '0' {
 			return false
 		}
 	}
