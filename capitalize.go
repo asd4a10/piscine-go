@@ -11,9 +11,10 @@ func Capitalize(s string) string {
 	for i := range a {
 		if a[i] == '#' || (a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z') || a[i] == '*' || a[i] == '@' || a[i] == '&' || (a[i] <= '9' && a[i] >= '0') {
 			w++
-			if (a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z') {
-				l++
-			}
+			l++
+			// if (a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z') {
+			// 	l++
+			// }
 		} else {
 			w = 0
 			l = 0
