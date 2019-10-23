@@ -7,8 +7,8 @@ package ToUpper
 func ToUpper(s string) string {
 	a := []rune(s)
 	for i := range a {
-		if a[i] >= 'a' && a[i] <= 'z' {
-			a[i] -= 32
+		if a[i] >= 'A' && a[i] <= 'Z' {
+			a[i] += 32
 		}
 	}
 	s = string(a)
