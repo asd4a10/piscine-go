@@ -17,7 +17,7 @@ func PrintNbrInOrder(n int) {
 		size++
 	}
 	sen := []byte(w)
-	for count == 1 {
+	for count == 1 { 
 		for i := range sen {
 			if i == size-1 {
 				break
