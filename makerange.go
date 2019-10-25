@@ -1,8 +1,8 @@
-package main
+package piscine
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
 func AppendRange(min, max int) []int {
 	var answer []int
@@ -12,7 +12,7 @@ func AppendRange(min, max int) []int {
 	return answer
 }
 
-func main() {
-	fmt.Println(AppendRange(5, 10))
-	fmt.Println(AppendRange(10, 10))
-}
+// func main() {
+// 	fmt.Println(AppendRange(5, 10))
+// 	fmt.Println(AppendRange(10, 10))
+// }
